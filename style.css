@@ -1,0 +1,7 @@
+header{ 
+    display: flex;
+} 
+ 
+header h1{ 
+    width: 50%;
+}
