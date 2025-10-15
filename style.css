@@ -3,5 +3,49 @@ header{
 } 
  
 header h1{ 
-    width: 50%;
+    width: 100%;  
+    color: lightpink;
+} 
+
+body {
+  margin: 0;
+  height: 100vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at 20% 20%, #a5f3fc 0%, #fbcfe8 40%, #c7d2fe 80%);
+  background-size: 200% 200%;
+  animation: dreamyGradient 12s ease-in-out infinite;
+  font-family: 'Poppins', sans-serif;
+  color: #1e3a8a;
+}
+
+
+@keyframes dreamyGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; } 
+} 
+
+
+
+
+.glass-card {
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 25px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+  padding: 40px;
+  width: 90%;
+  max-width: 650px;
+}
+
+
+input.form-control {
+  border-radius: 10px;
+}
+
+.btn-outline-info {
+  border-radius: 10px;
 }

@@ -1,30 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PodJourney</title> 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./style.css">  
-    <link rel="stylesheet" href="./assets/bootstrap-icons/font/bootstrap-icons.min.css">
-    <script src="./index.js" defer></script> 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer ></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PodJourney</title> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">  
+  <link rel="stylesheet" href="./assets/bootstrap-icons/font/bootstrap-icons.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="index.js" defer></script> 
 </head>
-<body class="container"> 
-    <header> 
-        <h1>PodJourney</h1>  
-        <div> 
-       <button>History</button>
-  
-        </div>
-    </header> 
-    <main> 
-        <section> 
-            <input placeholder="search">
-        </section>
-    </main>
-    
-    
 
+<body>   
+  <div class="stars"></div>
+  <div class="glass-card">
+    <header class="d-flex justify-content-between align-items-center mb-3">
+      <h1>PodJourney</h1>  
+      <button type="button" class="btn btn-outline-info" data-bs-toggle="offcanvas" data-bs-target="#History">
+        <i class="bi bi-clock-history"></i> History
+      </button>
+    </header>  
+
+    <main> 
+      <section class="d-flex gap-2 py-3"> 
+        <input id="searchInput" placeholder="Keyword Search" class="form-control">
+        <button id="searchBtn" class="btn btn-outline-info">
+          <i class="bi bi-search"></i>
+        </button>  
+      </section>  
+
+      <section id="podcastResults" class="row g-3 mt-3">
+        <!-- Podcast cards will appear here -->
+      </section>
+    </main>
+  </div>
+       
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="History" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">History</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      Recently Played
+    </div>
+  </div>
 </body>
 </html>
