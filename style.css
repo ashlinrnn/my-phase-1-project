@@ -4,7 +4,7 @@ header{
  
 header h1{ 
     width: 100%;  
-    color: lightpink;
+    color: blueviolet;
 } 
 
 body {
@@ -38,7 +38,7 @@ body {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
   padding: 40px;
   width: 90%;
-  max-width: 650px;
+  max-width: 950px;
 }
 
 
@@ -48,4 +48,39 @@ input.form-control {
 
 .btn-outline-info {
   border-radius: 10px;
+}
+
+header, #searchSection {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+} 
+
+.podcast-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  overflow: hidden;
+}
+
+.podcast-card img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  background: #222;
+}
+
+.podcast-card .card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.glass-card {
+  overflow: visible;
 }
