@@ -2,7 +2,7 @@
 const searchInput = document.getElementById('searchInput');
 const searchBtn = document.getElementById('searchBtn');
 const podcastResults = document.getElementById('podcastResults');
-
+const historyList = document.getElementById("historyList");
 
 function searchPodcasts() {
   const query = searchInput.value.trim();
@@ -42,9 +42,9 @@ function displayResults(podcasts) {
           <div class="card-body">
             <h5 class="card-title">${podcast.collectionName}</h5>
             <p class="card-text text-muted">${podcast.artistName || "Unknown Artist"}</p>
-            <a href="${podcast.collectionViewUrl}" target="_blank" class="btn btn-outline-primary btn-sm">
+            <button class="btn btn-outline-primary btn-sm play-btn" data-url="${podcast.collectionViewUrl}">
               View on iTunes
-            </a>
+            </button>
           </div>
         </div>
       </div>
@@ -60,5 +60,19 @@ searchBtn.addEventListener('click', searchPodcasts);
 searchInput.addEventListener('keypress', e => {
   if (e.key === 'Enter') {
     searchPodcasts();
+  }
+});
+ 
+document.addEventListener("click", function(e) {
+  if (e.target.classList.contains("play-btn")) {
+    const url = e.target.getAttribute("data-url");
+    const title = e.target.getAttribute("data-title");
+    const img = e.target.getAttribute("data-img");
+
+  
+    saveToHistory({ title, img, url });
+
+    
+    window.open(url, "_blank");
   }
 });
