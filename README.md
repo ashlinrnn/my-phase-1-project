@@ -98,7 +98,7 @@ Version 1.2.0 – Improved layout responsiveness and theme
 This project is licensed under the MIT License.
 See the LICENSE.md file for full details on usage and permissions.
 
-Acknowledgments
+# Acknowledgments
 
 This project was developed using publicly available documentation and learning materials.
 Special thanks to the following resources that helped guide the development process:
