@@ -70,16 +70,16 @@ Move into the cloned folder by running:
 cd my-phase-1-project
 
 
-Open the Project in VS Code
+3. **Open the Project in VS Code**
 To open the folder in Visual Studio Code, type:
 
 code .
 
 
-Run the Application
+4. **Run the Application**
 Open the index.html file in your browser to view the application.
 
-Author
+# Author
 
 Name: Ashlin Rofina
 
