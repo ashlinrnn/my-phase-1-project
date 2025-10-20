@@ -84,3 +84,27 @@ Open the index.html file in your browser to view the application.
 Name: Ashlin Rofina
 
 GitHub Account: ashlinrnn
+
+# Version History
+
+Version 1.0.0 – Initial release
+
+Version 1.1.0 – Added search history feature
+
+Version 1.2.0 – Improved layout responsiveness and theme
+
+License
+
+This project is licensed under the MIT License.
+See the LICENSE.md file for full details on usage and permissions.
+
+Acknowledgments
+
+This project was developed using publicly available documentation and learning materials.
+Special thanks to the following resources that helped guide the development process:
+
+W3Schools - Fetch API
+
+Apple iTunes Search API Documentation
+
+Bootstrap 5 Documentation
