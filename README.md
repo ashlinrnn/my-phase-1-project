@@ -93,7 +93,7 @@ Version 1.1.0 – Added search history feature
 
 Version 1.2.0 – Improved layout responsiveness and theme
 
-License
+# License
 
 This project is licensed under the MIT License.
 See the LICENSE.md file for full details on usage and permissions.
